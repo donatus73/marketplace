@@ -588,7 +588,7 @@
 
         function renderFeaturedServices() {
             const container = document.getElementById('featured-services');
-            const featured = services.slice(0, 3);
+            const featured = services.slice(0, 4); // Show first 4 services instead of 3
             container.innerHTML = featured.map(service => `
                 <div class="service-card">
                     ${renderServiceImage(service)}
